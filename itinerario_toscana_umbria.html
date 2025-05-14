@@ -1,0 +1,608 @@
+<!DOCTYPE html>
+<html>
+<head>
+    
+    <meta http-equiv="content-type" content="text/html; charset=UTF-8" />
+    
+        <script>
+            L_NO_TOUCH = false;
+            L_DISABLE_3D = false;
+        </script>
+    
+    <style>html, body {width: 100%;height: 100%;margin: 0;padding: 0;}</style>
+    <style>#map {position:absolute;top:0;bottom:0;right:0;left:0;}</style>
+    <script src="https://cdn.jsdelivr.net/npm/leaflet@1.6.0/dist/leaflet.js"></script>
+    <script src="https://code.jquery.com/jquery-1.12.4.min.js"></script>
+    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.2.0/js/bootstrap.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/Leaflet.awesome-markers/2.0.2/leaflet.awesome-markers.js"></script>
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/leaflet@1.6.0/dist/leaflet.css"/>
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.2.0/css/bootstrap.min.css"/>
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.2.0/css/bootstrap-theme.min.css"/>
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/font-awesome/4.6.3/css/font-awesome.min.css"/>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/Leaflet.awesome-markers/2.0.2/leaflet.awesome-markers.css"/>
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/gh/python-visualization/folium/folium/templates/leaflet.awesome.rotate.min.css"/>
+    
+            <meta name="viewport" content="width=device-width,
+                initial-scale=1.0, maximum-scale=1.0, user-scalable=no" />
+            <style>
+                #map_73b209b3168d10ce67904d64f89a2c0e {
+                    position: relative;
+                    width: 100.0%;
+                    height: 100.0%;
+                    left: 0.0%;
+                    top: 0.0%;
+                }
+            </style>
+        
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/leaflet.markercluster/1.1.0/leaflet.markercluster.js"></script>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/leaflet.markercluster/1.1.0/MarkerCluster.css"/>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/leaflet.markercluster/1.1.0/MarkerCluster.Default.css"/>
+</head>
+<body>
+    
+    
+            <div class="folium-map" id="map_73b209b3168d10ce67904d64f89a2c0e" ></div>
+        
+</body>
+<script>
+    
+    
+            var map_73b209b3168d10ce67904d64f89a2c0e = L.map(
+                "map_73b209b3168d10ce67904d64f89a2c0e",
+                {
+                    center: [43.0, 11.5],
+                    crs: L.CRS.EPSG3857,
+                    zoom: 7,
+                    zoomControl: true,
+                    preferCanvas: false,
+                }
+            );
+
+            
+
+        
+    
+            var tile_layer_ab654aaca194c77fa93bd62e1c56b02c = L.tileLayer(
+                "https://{s}.tile.openstreetmap.org/{z}/{x}/{y}.png",
+                {"attribution": "Data by \u0026copy; \u003ca href=\"http://openstreetmap.org\"\u003eOpenStreetMap\u003c/a\u003e, under \u003ca href=\"http://www.openstreetmap.org/copyright\"\u003eODbL\u003c/a\u003e.", "detectRetina": false, "maxNativeZoom": 18, "maxZoom": 18, "minZoom": 0, "noWrap": false, "opacity": 1, "subdomains": "abc", "tms": false}
+            ).addTo(map_73b209b3168d10ce67904d64f89a2c0e);
+        
+    
+            var marker_cluster_1f7766ef8fb5b7f007cc57700b04019d = L.markerClusterGroup(
+                {}
+            );
+            map_73b209b3168d10ce67904d64f89a2c0e.addLayer(marker_cluster_1f7766ef8fb5b7f007cc57700b04019d);
+        
+    
+            var marker_933fd2bbb3c617f47c62d8a42eb99213 = L.marker(
+                [45.4642, 9.19],
+                {}
+            ).addTo(marker_cluster_1f7766ef8fb5b7f007cc57700b04019d);
+        
+    
+            var icon_dac18b19134448a5c4a8a0b3bc96d826 = L.AwesomeMarkers.icon(
+                {"extraClasses": "fa-rotate-0", "icon": "info-sign", "iconColor": "white", "markerColor": "darkgreen", "prefix": "glyphicon"}
+            );
+            marker_933fd2bbb3c617f47c62d8a42eb99213.setIcon(icon_dac18b19134448a5c4a8a0b3bc96d826);
+        
+    
+        var popup_6d68aee8d2a5700f08ca8f6a15a54405 = L.popup({"maxWidth": "100%"});
+
+        
+            var html_d9c3c316e88229671f777b8e91e18882 = $(`<div id="html_d9c3c316e88229671f777b8e91e18882" style="width: 100.0%; height: 100.0%;"><b>Milano</b><br>Partenza</div>`)[0];
+            popup_6d68aee8d2a5700f08ca8f6a15a54405.setContent(html_d9c3c316e88229671f777b8e91e18882);
+        
+
+        marker_933fd2bbb3c617f47c62d8a42eb99213.bindPopup(popup_6d68aee8d2a5700f08ca8f6a15a54405)
+        ;
+
+        
+    
+    
+            var marker_b551909161055cf7a7548dda20c84258 = L.marker(
+                [44.7744, 9.3847],
+                {}
+            ).addTo(marker_cluster_1f7766ef8fb5b7f007cc57700b04019d);
+        
+    
+            var icon_820c19cb7b31e37bb54f0f4671734f85 = L.AwesomeMarkers.icon(
+                {"extraClasses": "fa-rotate-0", "icon": "info-sign", "iconColor": "white", "markerColor": "darkgreen", "prefix": "glyphicon"}
+            );
+            marker_b551909161055cf7a7548dda20c84258.setIcon(icon_820c19cb7b31e37bb54f0f4671734f85);
+        
+    
+        var popup_7724d54903166f51fe2500a74c6e1221 = L.popup({"maxWidth": "100%"});
+
+        
+            var html_b39c2388377b3b99eb691dcd25854128 = $(`<div id="html_b39c2388377b3b99eb691dcd25854128" style="width: 100.0%; height: 100.0%;"><b>Bobbio</b><br>Borgo col Ponte Gobbo</div>`)[0];
+            popup_7724d54903166f51fe2500a74c6e1221.setContent(html_b39c2388377b3b99eb691dcd25854128);
+        
+
+        marker_b551909161055cf7a7548dda20c84258.bindPopup(popup_7724d54903166f51fe2500a74c6e1221)
+        ;
+
+        
+    
+    
+            var marker_547847b88a08c1a5bb7b4dcd133acadd = L.marker(
+                [44.3775, 9.8799],
+                {}
+            ).addTo(marker_cluster_1f7766ef8fb5b7f007cc57700b04019d);
+        
+    
+            var icon_b7ee62522a3c3d3f3f9051d2dba318a5 = L.AwesomeMarkers.icon(
+                {"extraClasses": "fa-rotate-0", "icon": "info-sign", "iconColor": "white", "markerColor": "darkgreen", "prefix": "glyphicon"}
+            );
+            marker_547847b88a08c1a5bb7b4dcd133acadd.setIcon(icon_b7ee62522a3c3d3f3f9051d2dba318a5);
+        
+    
+        var popup_7045e05cb1205c6100799252a62acab1 = L.popup({"maxWidth": "100%"});
+
+        
+            var html_96a28756a9eae42985382d04a5b73db4 = $(`<div id="html_96a28756a9eae42985382d04a5b73db4" style="width: 100.0%; height: 100.0%;"><b>Pontremoli (Lunigiana)</b><br>Entrata in Toscana rurale</div>`)[0];
+            popup_7045e05cb1205c6100799252a62acab1.setContent(html_96a28756a9eae42985382d04a5b73db4);
+        
+
+        marker_547847b88a08c1a5bb7b4dcd133acadd.bindPopup(popup_7045e05cb1205c6100799252a62acab1)
+        ;
+
+        
+    
+    
+            var marker_f5cdac4c1b1ed45393601f84fe3c8918 = L.marker(
+                [44.1526, 10.1086],
+                {}
+            ).addTo(marker_cluster_1f7766ef8fb5b7f007cc57700b04019d);
+        
+    
+            var icon_aef32565026140f412674bcdde1a8a56 = L.AwesomeMarkers.icon(
+                {"extraClasses": "fa-rotate-0", "icon": "info-sign", "iconColor": "white", "markerColor": "darkgreen", "prefix": "glyphicon"}
+            );
+            marker_f5cdac4c1b1ed45393601f84fe3c8918.setIcon(icon_aef32565026140f412674bcdde1a8a56);
+        
+    
+        var popup_354ab8d5eba1d6cfdccb89563dcac501 = L.popup({"maxWidth": "100%"});
+
+        
+            var html_52c773d5c6baa560e9ea3026092bd452 = $(`<div id="html_52c773d5c6baa560e9ea3026092bd452" style="width: 100.0%; height: 100.0%;"><b>Equi Terme</b><br>Grotte e terme naturali</div>`)[0];
+            popup_354ab8d5eba1d6cfdccb89563dcac501.setContent(html_52c773d5c6baa560e9ea3026092bd452);
+        
+
+        marker_f5cdac4c1b1ed45393601f84fe3c8918.bindPopup(popup_354ab8d5eba1d6cfdccb89563dcac501)
+        ;
+
+        
+    
+    
+            var marker_0bf3156f23618e622e6563a7a696388d = L.marker(
+                [44.0104, 10.578],
+                {}
+            ).addTo(marker_cluster_1f7766ef8fb5b7f007cc57700b04019d);
+        
+    
+            var icon_7436abb66d5edf6abf6338613cd990b7 = L.AwesomeMarkers.icon(
+                {"extraClasses": "fa-rotate-0", "icon": "info-sign", "iconColor": "white", "markerColor": "darkgreen", "prefix": "glyphicon"}
+            );
+            marker_0bf3156f23618e622e6563a7a696388d.setIcon(icon_7436abb66d5edf6abf6338613cd990b7);
+        
+    
+        var popup_3901ffd869ca5d84e035e367f8df776f = L.popup({"maxWidth": "100%"});
+
+        
+            var html_e17e4a5d02657d46af4f9a5bf2f03bfd = $(`<div id="html_e17e4a5d02657d46af4f9a5bf2f03bfd" style="width: 100.0%; height: 100.0%;"><b>Bagni di Lucca</b><br>Terme storiche</div>`)[0];
+            popup_3901ffd869ca5d84e035e367f8df776f.setContent(html_e17e4a5d02657d46af4f9a5bf2f03bfd);
+        
+
+        marker_0bf3156f23618e622e6563a7a696388d.bindPopup(popup_3901ffd869ca5d84e035e367f8df776f)
+        ;
+
+        
+    
+    
+            var marker_4586f6eaa411776ec9a839733887cca3 = L.marker(
+                [42.8972, 11.7681],
+                {}
+            ).addTo(marker_cluster_1f7766ef8fb5b7f007cc57700b04019d);
+        
+    
+            var icon_33a7bf2f9c5b1cd79242a9a17db392e2 = L.AwesomeMarkers.icon(
+                {"extraClasses": "fa-rotate-0", "icon": "info-sign", "iconColor": "white", "markerColor": "darkgreen", "prefix": "glyphicon"}
+            );
+            marker_4586f6eaa411776ec9a839733887cca3.setIcon(icon_33a7bf2f9c5b1cd79242a9a17db392e2);
+        
+    
+        var popup_eaef9bd36b0e3d5cd9028e706eb0f40c = L.popup({"maxWidth": "100%"});
+
+        
+            var html_7ed90d7eaacf67b9bb8e7bc249539981 = $(`<div id="html_7ed90d7eaacf67b9bb8e7bc249539981" style="width: 100.0%; height: 100.0%;"><b>Radicofani</b><br>Panorama sulla Val d'Orcia</div>`)[0];
+            popup_eaef9bd36b0e3d5cd9028e706eb0f40c.setContent(html_7ed90d7eaacf67b9bb8e7bc249539981);
+        
+
+        marker_4586f6eaa411776ec9a839733887cca3.bindPopup(popup_eaef9bd36b0e3d5cd9028e706eb0f40c)
+        ;
+
+        
+    
+    
+            var marker_d8144ec2f2072e4e3e67a3f04b13cf17 = L.marker(
+                [42.9587, 11.6165],
+                {}
+            ).addTo(marker_cluster_1f7766ef8fb5b7f007cc57700b04019d);
+        
+    
+            var icon_faf736778e3b4859f3cbd60ce9d0eb72 = L.AwesomeMarkers.icon(
+                {"extraClasses": "fa-rotate-0", "icon": "info-sign", "iconColor": "white", "markerColor": "darkgreen", "prefix": "glyphicon"}
+            );
+            marker_d8144ec2f2072e4e3e67a3f04b13cf17.setIcon(icon_faf736778e3b4859f3cbd60ce9d0eb72);
+        
+    
+        var popup_165f83a6760355b96243592947f77be2 = L.popup({"maxWidth": "100%"});
+
+        
+            var html_216374e298a1a2122eab951b8e690b20 = $(`<div id="html_216374e298a1a2122eab951b8e690b20" style="width: 100.0%; height: 100.0%;"><b>Vivo d'Orcia</b><br>Monte Amiata trekking</div>`)[0];
+            popup_165f83a6760355b96243592947f77be2.setContent(html_216374e298a1a2122eab951b8e690b20);
+        
+
+        marker_d8144ec2f2072e4e3e67a3f04b13cf17.bindPopup(popup_165f83a6760355b96243592947f77be2)
+        ;
+
+        
+    
+    
+            var marker_8a8975af48b1c5d176d5e41e28e2c9b6 = L.marker(
+                [43.0066, 11.6206],
+                {}
+            ).addTo(marker_cluster_1f7766ef8fb5b7f007cc57700b04019d);
+        
+    
+            var icon_29ed5c89c04eb379867a95c44e944732 = L.AwesomeMarkers.icon(
+                {"extraClasses": "fa-rotate-0", "icon": "info-sign", "iconColor": "white", "markerColor": "darkgreen", "prefix": "glyphicon"}
+            );
+            marker_8a8975af48b1c5d176d5e41e28e2c9b6.setIcon(icon_29ed5c89c04eb379867a95c44e944732);
+        
+    
+        var popup_a0463dc024b36e0883b3709903c139aa = L.popup({"maxWidth": "100%"});
+
+        
+            var html_009afe7fa3eb74a1e29bf3a38b2e2f4a = $(`<div id="html_009afe7fa3eb74a1e29bf3a38b2e2f4a" style="width: 100.0%; height: 100.0%;"><b>Castiglione d'Orcia</b><br>Borgo medievale</div>`)[0];
+            popup_a0463dc024b36e0883b3709903c139aa.setContent(html_009afe7fa3eb74a1e29bf3a38b2e2f4a);
+        
+
+        marker_8a8975af48b1c5d176d5e41e28e2c9b6.bindPopup(popup_a0463dc024b36e0883b3709903c139aa)
+        ;
+
+        
+    
+    
+            var marker_cfc0fbc1e726bc581e9b91df9e4a8e31 = L.marker(
+                [42.6558, 11.5131],
+                {}
+            ).addTo(marker_cluster_1f7766ef8fb5b7f007cc57700b04019d);
+        
+    
+            var icon_f4bfedf46c8d593df17dc83318dc2c8c = L.AwesomeMarkers.icon(
+                {"extraClasses": "fa-rotate-0", "icon": "info-sign", "iconColor": "white", "markerColor": "darkgreen", "prefix": "glyphicon"}
+            );
+            marker_cfc0fbc1e726bc581e9b91df9e4a8e31.setIcon(icon_f4bfedf46c8d593df17dc83318dc2c8c);
+        
+    
+        var popup_8b3f47830e5d3bd0933898d92561ad9a = L.popup({"maxWidth": "100%"});
+
+        
+            var html_217871c481c7f4d66f3f8ff2bba9d329 = $(`<div id="html_217871c481c7f4d66f3f8ff2bba9d329" style="width: 100.0%; height: 100.0%;"><b>Saturnia</b><br>Cascate del Mulino</div>`)[0];
+            popup_8b3f47830e5d3bd0933898d92561ad9a.setContent(html_217871c481c7f4d66f3f8ff2bba9d329);
+        
+
+        marker_cfc0fbc1e726bc581e9b91df9e4a8e31.bindPopup(popup_8b3f47830e5d3bd0933898d92561ad9a)
+        ;
+
+        
+    
+    
+            var marker_1b3596ea264fa8435b8c98b9e0db5ca7 = L.marker(
+                [42.6522, 11.6706],
+                {}
+            ).addTo(marker_cluster_1f7766ef8fb5b7f007cc57700b04019d);
+        
+    
+            var icon_e7cf3b46bb24c53df76ea6ed148ebf23 = L.AwesomeMarkers.icon(
+                {"extraClasses": "fa-rotate-0", "icon": "info-sign", "iconColor": "white", "markerColor": "darkgreen", "prefix": "glyphicon"}
+            );
+            marker_1b3596ea264fa8435b8c98b9e0db5ca7.setIcon(icon_e7cf3b46bb24c53df76ea6ed148ebf23);
+        
+    
+        var popup_ed080a139205c8d5699f38ef2f6f962f = L.popup({"maxWidth": "100%"});
+
+        
+            var html_ba2a6fc98bcf0271918bf08231744bc5 = $(`<div id="html_ba2a6fc98bcf0271918bf08231744bc5" style="width: 100.0%; height: 100.0%;"><b>Sovana</b><br>Necropoli etrusca</div>`)[0];
+            popup_ed080a139205c8d5699f38ef2f6f962f.setContent(html_ba2a6fc98bcf0271918bf08231744bc5);
+        
+
+        marker_1b3596ea264fa8435b8c98b9e0db5ca7.bindPopup(popup_ed080a139205c8d5699f38ef2f6f962f)
+        ;
+
+        
+    
+    
+            var marker_8e6d593292637e7ae29ab3350dc92144 = L.marker(
+                [42.6344, 11.6672],
+                {}
+            ).addTo(marker_cluster_1f7766ef8fb5b7f007cc57700b04019d);
+        
+    
+            var icon_3b89a26caade5080ff6fbfc675edfca9 = L.AwesomeMarkers.icon(
+                {"extraClasses": "fa-rotate-0", "icon": "info-sign", "iconColor": "white", "markerColor": "darkgreen", "prefix": "glyphicon"}
+            );
+            marker_8e6d593292637e7ae29ab3350dc92144.setIcon(icon_3b89a26caade5080ff6fbfc675edfca9);
+        
+    
+        var popup_f9e87504cc8b40ab7f7630b873253d8e = L.popup({"maxWidth": "100%"});
+
+        
+            var html_f4740452438203bb5f8e18d53c4defe2 = $(`<div id="html_f4740452438203bb5f8e18d53c4defe2" style="width: 100.0%; height: 100.0%;"><b>Pitigliano</b><br>Città del tufo</div>`)[0];
+            popup_f9e87504cc8b40ab7f7630b873253d8e.setContent(html_f4740452438203bb5f8e18d53c4defe2);
+        
+
+        marker_8e6d593292637e7ae29ab3350dc92144.bindPopup(popup_f9e87504cc8b40ab7f7630b873253d8e)
+        ;
+
+        
+    
+    
+            var marker_ad09ba7c88affcab25fb34e2f14df0fd = L.marker(
+                [42.59, 11.8015],
+                {}
+            ).addTo(marker_cluster_1f7766ef8fb5b7f007cc57700b04019d);
+        
+    
+            var icon_021473d01ebfe5687f25376e0d9bf651 = L.AwesomeMarkers.icon(
+                {"extraClasses": "fa-rotate-0", "icon": "info-sign", "iconColor": "white", "markerColor": "darkgreen", "prefix": "glyphicon"}
+            );
+            marker_ad09ba7c88affcab25fb34e2f14df0fd.setIcon(icon_021473d01ebfe5687f25376e0d9bf651);
+        
+    
+        var popup_62149ae82bfa15a066c9c65d1d73931e = L.popup({"maxWidth": "100%"});
+
+        
+            var html_5f24ccf9c0df8b2f3851ee8fa1573129 = $(`<div id="html_5f24ccf9c0df8b2f3851ee8fa1573129" style="width: 100.0%; height: 100.0%;"><b>Lago di Mezzano</b><br>Lago selvaggio</div>`)[0];
+            popup_62149ae82bfa15a066c9c65d1d73931e.setContent(html_5f24ccf9c0df8b2f3851ee8fa1573129);
+        
+
+        marker_ad09ba7c88affcab25fb34e2f14df0fd.bindPopup(popup_62149ae82bfa15a066c9c65d1d73931e)
+        ;
+
+        
+    
+    
+            var marker_00b8ae87083ae7b1579d942a611645c2 = L.marker(
+                [42.6271, 12.1023],
+                {}
+            ).addTo(marker_cluster_1f7766ef8fb5b7f007cc57700b04019d);
+        
+    
+            var icon_980e02149cbad5dbc94867bd5c79d7b4 = L.AwesomeMarkers.icon(
+                {"extraClasses": "fa-rotate-0", "icon": "info-sign", "iconColor": "white", "markerColor": "darkgreen", "prefix": "glyphicon"}
+            );
+            marker_00b8ae87083ae7b1579d942a611645c2.setIcon(icon_980e02149cbad5dbc94867bd5c79d7b4);
+        
+    
+        var popup_63f176b82c9d11ab57cf44a2e47af368 = L.popup({"maxWidth": "100%"});
+
+        
+            var html_e81a8d2fc0372e138c783e064294de39 = $(`<div id="html_e81a8d2fc0372e138c783e064294de39" style="width: 100.0%; height: 100.0%;"><b>Civita di Bagnoregio</b><br>La città che muore</div>`)[0];
+            popup_63f176b82c9d11ab57cf44a2e47af368.setContent(html_e81a8d2fc0372e138c783e064294de39);
+        
+
+        marker_00b8ae87083ae7b1579d942a611645c2.bindPopup(popup_63f176b82c9d11ab57cf44a2e47af368)
+        ;
+
+        
+    
+    
+            var marker_85cdf61b903b4843b994d637d3fc9d67 = L.marker(
+                [42.9942, 12.6731],
+                {}
+            ).addTo(marker_cluster_1f7766ef8fb5b7f007cc57700b04019d);
+        
+    
+            var icon_06d64fbe619a8946dc780f5d4893b508 = L.AwesomeMarkers.icon(
+                {"extraClasses": "fa-rotate-0", "icon": "info-sign", "iconColor": "white", "markerColor": "darkgreen", "prefix": "glyphicon"}
+            );
+            marker_85cdf61b903b4843b994d637d3fc9d67.setIcon(icon_06d64fbe619a8946dc780f5d4893b508);
+        
+    
+        var popup_60716202639b8d8edb55433d2daea2ef = L.popup({"maxWidth": "100%"});
+
+        
+            var html_a5046b3f19e6601cd9cc9991adc9564a = $(`<div id="html_a5046b3f19e6601cd9cc9991adc9564a" style="width: 100.0%; height: 100.0%;"><b>Spello</b><br>Borgo fiorito</div>`)[0];
+            popup_60716202639b8d8edb55433d2daea2ef.setContent(html_a5046b3f19e6601cd9cc9991adc9564a);
+        
+
+        marker_85cdf61b903b4843b994d637d3fc9d67.bindPopup(popup_60716202639b8d8edb55433d2daea2ef)
+        ;
+
+        
+    
+    
+            var marker_297414b26f390d58b1f9a3dbb8f931a2 = L.marker(
+                [43.06, 12.6667],
+                {}
+            ).addTo(marker_cluster_1f7766ef8fb5b7f007cc57700b04019d);
+        
+    
+            var icon_99e5cda8b417756307b4ca4b5f37ee39 = L.AwesomeMarkers.icon(
+                {"extraClasses": "fa-rotate-0", "icon": "info-sign", "iconColor": "white", "markerColor": "darkgreen", "prefix": "glyphicon"}
+            );
+            marker_297414b26f390d58b1f9a3dbb8f931a2.setIcon(icon_99e5cda8b417756307b4ca4b5f37ee39);
+        
+    
+        var popup_e8b58c605b4136da202c0afee0cd9370 = L.popup({"maxWidth": "100%"});
+
+        
+            var html_b0a8c3da591a8a3444fee64e7cc5322f = $(`<div id="html_b0a8c3da591a8a3444fee64e7cc5322f" style="width: 100.0%; height: 100.0%;"><b>Monte Subasio</b><br>Parco naturale tra Assisi e Spello</div>`)[0];
+            popup_e8b58c605b4136da202c0afee0cd9370.setContent(html_b0a8c3da591a8a3444fee64e7cc5322f);
+        
+
+        marker_297414b26f390d58b1f9a3dbb8f931a2.bindPopup(popup_e8b58c605b4136da202c0afee0cd9370)
+        ;
+
+        
+    
+    
+            var marker_e73bef003715f3b90cb4ee695df2ce77 = L.marker(
+                [42.7931, 13.095],
+                {}
+            ).addTo(marker_cluster_1f7766ef8fb5b7f007cc57700b04019d);
+        
+    
+            var icon_e6d46dad903e5e4a8db4a4173ecc99eb = L.AwesomeMarkers.icon(
+                {"extraClasses": "fa-rotate-0", "icon": "info-sign", "iconColor": "white", "markerColor": "darkgreen", "prefix": "glyphicon"}
+            );
+            marker_e73bef003715f3b90cb4ee695df2ce77.setIcon(icon_e6d46dad903e5e4a8db4a4173ecc99eb);
+        
+    
+        var popup_c2f69888740c68c4db18571d4af38db9 = L.popup({"maxWidth": "100%"});
+
+        
+            var html_76cbe8fea64f4a447821d0f452f5b43d = $(`<div id="html_76cbe8fea64f4a447821d0f452f5b43d" style="width: 100.0%; height: 100.0%;"><b>Norcia</b><br>Città dei salumi</div>`)[0];
+            popup_c2f69888740c68c4db18571d4af38db9.setContent(html_76cbe8fea64f4a447821d0f452f5b43d);
+        
+
+        marker_e73bef003715f3b90cb4ee695df2ce77.bindPopup(popup_c2f69888740c68c4db18571d4af38db9)
+        ;
+
+        
+    
+    
+            var marker_6edcb3152263283b5753ba11383b3140 = L.marker(
+                [42.8125, 13.2],
+                {}
+            ).addTo(marker_cluster_1f7766ef8fb5b7f007cc57700b04019d);
+        
+    
+            var icon_148b9a2ab5a2862b7a1b54b5e1e7f5a5 = L.AwesomeMarkers.icon(
+                {"extraClasses": "fa-rotate-0", "icon": "info-sign", "iconColor": "white", "markerColor": "darkgreen", "prefix": "glyphicon"}
+            );
+            marker_6edcb3152263283b5753ba11383b3140.setIcon(icon_148b9a2ab5a2862b7a1b54b5e1e7f5a5);
+        
+    
+        var popup_6262fb1a67313b2cf028d506b4584bbf = L.popup({"maxWidth": "100%"});
+
+        
+            var html_232199c76bf0b54c7900a4b203cea93a = $(`<div id="html_232199c76bf0b54c7900a4b203cea93a" style="width: 100.0%; height: 100.0%;"><b>Castelluccio di Norcia</b><br>Fioritura e altopiano</div>`)[0];
+            popup_6262fb1a67313b2cf028d506b4584bbf.setContent(html_232199c76bf0b54c7900a4b203cea93a);
+        
+
+        marker_6edcb3152263283b5753ba11383b3140.bindPopup(popup_6262fb1a67313b2cf028d506b4584bbf)
+        ;
+
+        
+    
+    
+            var marker_b703a7a618a8d7f14217dca0087ac2db = L.marker(
+                [42.9446, 13.0994],
+                {}
+            ).addTo(marker_cluster_1f7766ef8fb5b7f007cc57700b04019d);
+        
+    
+            var icon_b30241b5d6c6ca654b50698ace54e7f2 = L.AwesomeMarkers.icon(
+                {"extraClasses": "fa-rotate-0", "icon": "info-sign", "iconColor": "white", "markerColor": "darkgreen", "prefix": "glyphicon"}
+            );
+            marker_b703a7a618a8d7f14217dca0087ac2db.setIcon(icon_b30241b5d6c6ca654b50698ace54e7f2);
+        
+    
+        var popup_8986de4d77c1bd33c8c02cd6f906500a = L.popup({"maxWidth": "100%"});
+
+        
+            var html_bbcd4bc96d585f68d405d27e0637bde0 = $(`<div id="html_bbcd4bc96d585f68d405d27e0637bde0" style="width: 100.0%; height: 100.0%;"><b>Visso</b><br>Monti Sibillini</div>`)[0];
+            popup_8986de4d77c1bd33c8c02cd6f906500a.setContent(html_bbcd4bc96d585f68d405d27e0637bde0);
+        
+
+        marker_b703a7a618a8d7f14217dca0087ac2db.bindPopup(popup_8986de4d77c1bd33c8c02cd6f906500a)
+        ;
+
+        
+    
+    
+            var marker_acac284e3f36220fbb5749ebedb5ab9b = L.marker(
+                [43.1392, 13.0706],
+                {}
+            ).addTo(marker_cluster_1f7766ef8fb5b7f007cc57700b04019d);
+        
+    
+            var icon_9f98c9fd2dceb5d2c53536117075de89 = L.AwesomeMarkers.icon(
+                {"extraClasses": "fa-rotate-0", "icon": "info-sign", "iconColor": "white", "markerColor": "darkgreen", "prefix": "glyphicon"}
+            );
+            marker_acac284e3f36220fbb5749ebedb5ab9b.setIcon(icon_9f98c9fd2dceb5d2c53536117075de89);
+        
+    
+        var popup_73985ba598b5d6ee0c119be332473906 = L.popup({"maxWidth": "100%"});
+
+        
+            var html_c8e2666e8d5698addd447add8c8746aa = $(`<div id="html_c8e2666e8d5698addd447add8c8746aa" style="width: 100.0%; height: 100.0%;"><b>Camerino</b><br>Città universitaria</div>`)[0];
+            popup_73985ba598b5d6ee0c119be332473906.setContent(html_c8e2666e8d5698addd447add8c8746aa);
+        
+
+        marker_acac284e3f36220fbb5749ebedb5ab9b.bindPopup(popup_73985ba598b5d6ee0c119be332473906)
+        ;
+
+        
+    
+    
+            var marker_dc943f9f94bff90dcfca596cc0b9f107 = L.marker(
+                [43.3384, 12.9035],
+                {}
+            ).addTo(marker_cluster_1f7766ef8fb5b7f007cc57700b04019d);
+        
+    
+            var icon_1a9ba5f9ec5f405a0ccf438a5511cf71 = L.AwesomeMarkers.icon(
+                {"extraClasses": "fa-rotate-0", "icon": "info-sign", "iconColor": "white", "markerColor": "darkgreen", "prefix": "glyphicon"}
+            );
+            marker_dc943f9f94bff90dcfca596cc0b9f107.setIcon(icon_1a9ba5f9ec5f405a0ccf438a5511cf71);
+        
+    
+        var popup_7a17657f8a49fa69f26a8cce79ba49ee = L.popup({"maxWidth": "100%"});
+
+        
+            var html_4794322d2b33218fd83bfbee7138484f = $(`<div id="html_4794322d2b33218fd83bfbee7138484f" style="width: 100.0%; height: 100.0%;"><b>Fabriano</b><br>Capitale della carta</div>`)[0];
+            popup_7a17657f8a49fa69f26a8cce79ba49ee.setContent(html_4794322d2b33218fd83bfbee7138484f);
+        
+
+        marker_dc943f9f94bff90dcfca596cc0b9f107.bindPopup(popup_7a17657f8a49fa69f26a8cce79ba49ee)
+        ;
+
+        
+    
+    
+            var marker_81ae89ff5f8cebcc780813c280aea735 = L.marker(
+                [45.4642, 9.19],
+                {}
+            ).addTo(marker_cluster_1f7766ef8fb5b7f007cc57700b04019d);
+        
+    
+            var icon_9433a11f3e53091875233a647b7a951c = L.AwesomeMarkers.icon(
+                {"extraClasses": "fa-rotate-0", "icon": "info-sign", "iconColor": "white", "markerColor": "darkgreen", "prefix": "glyphicon"}
+            );
+            marker_81ae89ff5f8cebcc780813c280aea735.setIcon(icon_9433a11f3e53091875233a647b7a951c);
+        
+    
+        var popup_27483e5b371390db76aec18ff4a67acb = L.popup({"maxWidth": "100%"});
+
+        
+            var html_7c3744d5e6ede2565a93c06ea71f029e = $(`<div id="html_7c3744d5e6ede2565a93c06ea71f029e" style="width: 100.0%; height: 100.0%;"><b>Milano (Ritorno)</b><br>Strada del ritorno via Emilia</div>`)[0];
+            popup_27483e5b371390db76aec18ff4a67acb.setContent(html_7c3744d5e6ede2565a93c06ea71f029e);
+        
+
+        marker_81ae89ff5f8cebcc780813c280aea735.bindPopup(popup_27483e5b371390db76aec18ff4a67acb)
+        ;
+
+        
+    
+    
+            var poly_line_a45cb89ec05e5a51c9a5e1bc9366495b = L.polyline(
+                [[45.4642, 9.19], [44.7744, 9.3847], [44.3775, 9.8799], [44.1526, 10.1086], [44.0104, 10.578], [42.8972, 11.7681], [42.9587, 11.6165], [43.0066, 11.6206], [42.6558, 11.5131], [42.6522, 11.6706], [42.6344, 11.6672], [42.59, 11.8015], [42.6271, 12.1023], [42.9942, 12.6731], [43.06, 12.6667], [42.7931, 13.095], [42.8125, 13.2], [42.9446, 13.0994], [43.1392, 13.0706], [43.3384, 12.9035], [45.4642, 9.19]],
+                {"bubblingMouseEvents": true, "color": "purple", "dashArray": null, "dashOffset": null, "fill": false, "fillColor": "purple", "fillOpacity": 0.2, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "noClip": false, "opacity": 0.7, "smoothFactor": 1.0, "stroke": true, "weight": 4}
+            ).addTo(map_73b209b3168d10ce67904d64f89a2c0e);
+        
+</script>
+</html>
